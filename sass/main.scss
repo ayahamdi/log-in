@@ -1,0 +1,99 @@
+$main-color:#4D8AE6;
+$secondary-color:white;
+$base-color:#C3C3C3;
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #E6EAED;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $base-color;
+    opacity: 1; /* Firefox */
+  }
+.container{
+    .card{
+        border: none;
+        width: 30%;
+        margin: auto;
+        background-color: $secondary-color;
+        margin-top: 20px;
+        .card_header{
+            background-image: url('../images/cloud_0.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: $secondary-color;
+            font-size: 15px;
+            padding: 206px 0px 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .card_body{
+            padding:10px;
+            width: 90%;
+            margin: auto;
+            margin-top: 25px;
+            form{
+                span{
+                    position: absolute;
+                    color: $base-color;
+                    z-index: 999999;
+                    &:first-of-type{
+                    top: 272px;
+                    left: 28px;
+                    }
+                    &:nth-of-type(2){
+                        top: 318px;
+                        left: 28px;
+                    }
+                    &:nth-of-type(3){
+                        left: 287px;
+                        top: 321px;
+                    }
+                    &:nth-of-type(4){
+                        left: 287px;
+                        top: 321px;
+                        display: none;
+                    }
+                }
+                input{
+                    padding-left: 21px;
+                    position: relative;
+                    border: none;
+                    border-bottom: 1px solid $base-color;
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    color: $base-color;
+                    &:focus{
+                        outline: -webkit-focus-ring-color auto 0px;
+                    }
+                    :checked{
+                        background-color: $secondary-color!important;
+                    }
+                }
+                #form_remebercheck{
+                    label{
+                        color: $base-color;
+                    }
+                    input{
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+                #submit{
+                    border:none;
+                    border:1px solid $main-color;
+                    background-color: $main-color;
+                    padding: 7px 12px;
+                    border-radius: 5px;
+                    color: $secondary-color;
+                    font-weight: 500;
+                    margin: 62px 0px 30px 97px;
+                }
+           
+            }
+            
+
+        }
+    }
+}
